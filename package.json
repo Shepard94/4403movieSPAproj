@@ -1,0 +1,11 @@
+{
+  "name": "4403moviespaproj",
+  "version": "1.0.0",
+  "description": "movie database project 4403",
+  "main": "4403movieSPAscript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
