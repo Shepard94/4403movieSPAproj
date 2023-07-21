@@ -27,21 +27,3 @@ function search() {
     });
 }
 
-function previousPage() {
-    if (currentPage > 1) {
-        currentPage--;
-        displayResults();
-    }
-}
-
-function nextPage() {
-    const maxPage = Math.ceil(filteredResults.length / resultsPerPage);
-
-    if (currentPage < maxPage) {
-        currentPage++;
-        displayResults();
-    }
-}
-
-// Initial display
-displayResults();

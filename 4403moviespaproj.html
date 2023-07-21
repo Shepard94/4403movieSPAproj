@@ -3,13 +3,10 @@
 <head>
     <title>Movie Database App</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="4403movieSPAstyle.css">
 </head>
 <body>
-    <h1>Movie & TV Show Search</h1>
-    <input type="text" id="searchInput" placeholder="Search movies and TV shows">
-    <button onclick="search()">Search</button>
-    <div id="searchResults"></div>
+    <h1>Movie Database App</h1>
+    <div id="content"></div>
 
     <script>
         // Add your API key here
@@ -27,13 +24,9 @@
                 $('#content').html(html);
             });
         }
+
         // Call the function to display popular movies on page load
         displayPopularMovies();
-        <div id="pagination">
-            <button onclick="previousPage()">Previous</button>
-            <span id="current-page">1</span>
-            <button onclick="nextPage()">Next</button>
-        </div>
     </script>
 </body>
 </html>
