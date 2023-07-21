@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Database App</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Movie Database App</h1>
+    <div id="content"></div>
+
+    <script>
+        // Add your API key here
+        const API_KEY = 'f501c7abb0b5a215f8df55876d986b7a';
+        const BASE_URL = 'https://api.themoviedb.org/3';
+
+        // Function to display popular movies
+        function displayPopularMovies() {
+            const url = `${BASE_URL}/movie/popular?api_key=${API_KEY}`;
+            $.getJSON(url, function(data) {
+                let html = '<h2>Popular Movies</h2>';
+                data.results.forEach(function(movie) {
+                    html += `<p>${movie.title}</p>`;
+                });
+                $('#content').html(html);
+            });
+        }
+
+        // Call the function to display popular movies on page load
+        displayPopularMovies();
+    </script>
+</body>
+</html>
