@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: '4403movieSPAproj'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5AC4095270B24A8CB9BC783CAC502300 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_682B8EADA88F404B98ED6A2E9FE1EAE1 }}
           package: .
