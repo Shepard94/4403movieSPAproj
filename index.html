@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Search</title>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="4403movieSPAstyle.css">
+</head>
+<body>
+    <header>
+        <h1>Movie Search</h1>
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Search for a movie...">
+            <button type="submit">Search</button>
+        </form>
+    </header>
+    <main>
+        <select id="sort-select">
+            <option value="title">Title</option>
+            <option value="release-date">Release Date</option>
+            <option value="rating">Rating</option>
+        </select>        
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Filter by Decade</button>
+            <div id="myDropdown" class="dropdown-content">
+              <label><input type="checkbox" value="2020" class="year-filter">2020s</label>
+              <label><input type="checkbox" value="2010" class="year-filter">2010s</label>
+              <label><input type="checkbox" value="2000" class="year-filter">2000s</label>
+              <label><input type="checkbox" value="1990" class="year-filter">1990s</label>
+              <label><input type="checkbox" value="1980" class="year-filter">1980s</label>
+              <label><input type="checkbox" value="1970" class="year-filter">1970s</label>
+              <label><input type="checkbox" value="1960" class="year-filter">1960s</label>
+              <label><input type="checkbox" value="1950" class="year-filter">1950s</label>
+              <label><input type="checkbox" value="1940" class="year-filter">1940s</label>
+            </div>
+          </div>
+        
+        <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modal-text">modal text</p>
+        </div>
+        </div>
+
+        <div id="actorModal" class="modal">
+            <div class="modal-content">
+              <span class="close" id="actorModalClose">&times;</span>
+              <p id="modal-actor-text"></p>
+            </div>
+        </div>
+        
+        <div id="movie-container">
+        
+        </div>
+    </main>
+    <script src="4403movieSPAscript.js"></script>
+</body>
+</html>

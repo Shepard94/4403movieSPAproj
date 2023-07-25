@@ -1,0 +1,165 @@
+body {
+    font-family: Garamond, Georgia, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#search-form {
+    margin: 10px auto;
+    width: 80%;
+}
+
+#search-input {
+    width: 80%;
+    padding: 10px;
+}
+
+#movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.movie {
+    width: 200px;
+    margin: 15px;
+    text-align: center;
+}
+
+.movie img {
+    width: 100%;
+    max-width: 200px;
+}
+
+.movie .movie-info {
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    margin-top: -20px;
+    padding: 10px;
+}
+
+.movie-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.movie-title a {
+    color: #333;
+    text-decoration: none;
+}
+
+.movie-title a:hover {
+    text-decoration: underline;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    min-width: 160px;
+    z-index: 1;
+    padding: 12px 16px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content label {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content label:hover {background-color: #f1f1f1}
+
+.show {display: block;}
+
+.dropdown-content.show {
+    display: block;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+.movie img:hover,
+.movie h2:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+#modal-text {
+    line-height: 1.6;  
+    font-size: 18px;  
+}
+.actor {
+    color: blue;
+    cursor: pointer;
+}
+.modal-content-actor {
+    background-color: #e6f7ff;  
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    max-width: 500px;
+    transition: 0.3s;  
+}
+
+.modal-content-actor h2 {
+    font-size: 1.5em;  
+    color: #333;  
+    margin-bottom: 0.5em;  
+}
+
+.modal-content-actor p {
+    font-size: 1em;  
+    color: #555;  
+    text-align: justify;  
+    line-height: 1.5;  
+}
+
+  
+
